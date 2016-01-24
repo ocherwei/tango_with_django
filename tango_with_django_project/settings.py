@@ -1,5 +1,5 @@
 """
-Django settings for mysite2 project.
+Django settings for tango_with_django project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -57,9 +57,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'mysite2.urls'
+ROOT_URLCONF = 'tango_with_django_project.urls'
 
-WSGI_APPLICATION = 'mysite2.wsgi.application'
+WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
