@@ -34,12 +34,12 @@ class PageForm(forms.ModelForm):
 
     def clean(self):
         cleaned_data = self.cleaned_data
-        url = cleaned_date.get('url')
+        url = cleaned_data.get('url')
 
         # If url is not empty and doesn't start with 'http://', prepend 'http://'.
-        if url and not url.startswith('http://'):
+        if url and not (url.startswith('http://') or url.startswith('https://')):
             url = 'http://' + url
-            cleaned_date['url'] = url
+            cleaned_data['url'] = url
 
         return cleaned_data
         
