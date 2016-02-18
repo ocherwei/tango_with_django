@@ -7,7 +7,16 @@ import keys
 BING_API_KEY = keys.BING_API_KEY
 if __name__ == '__main__':
     main()
-	
+
+def main():
+    user_query = raw_input()
+
+    run_query(user_query)
+
+    print("Title : " + result['Title'])
+    print("Title : " + result['URL'])
+    print("Rank : ")
+    
 def run_query(search_terms):
     # Specify the base
     root_url = 'https://api.datamarket.azure.com/Bing/Search/'
